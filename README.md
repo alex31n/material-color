@@ -1,7 +1,5 @@
 # Material Color
 
-![Download](https://api.bintray.com/packages/alex31n/Material-Color/material-color/images/download.svg) 
-
 A set of colors based on Google's Material Design for android projects. Colors are found via XML or Java class. 
 
 &nbsp;
@@ -17,35 +15,27 @@ Normal color resource
 * Java: `Color.AQUA`, `Color.YELLOW`
 
 &nbsp;&nbsp;
+### Install
+&nbsp;
 
-### Install           
-
-
-#### Gradle 
-
-```
-
-dependencies {
-        compile 'com.github.alex31n:material-color:1.0'
+Step 1. Add the JitPack repository to your build file  
+Add it in your root build.gradle at the end of repositories:
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
 }
-
-```
-&nbsp;
-#### Maven
-
 ```
 
-<dependency>
-    <groupId>com.github.alex31n</groupId>
-    <artifactId>material-color</artifactId>
-    <version>1.0</version>
-    <type>pom</type>
-</dependency>
-
+Step 2. Add the dependency
+```gradle
+dependencies {
+    implementation 'com.github.alex31n:material-color:2.0.1'
+}
 ```
-&nbsp;
-#### Screenshot
-![Material Color Screenshot 01](https://raw.githubusercontent.com/alex31n/Material-Color/master/Assets/img_001.png "Material Color Screenshot 01")
 
 &nbsp;
 ### Some useful method
